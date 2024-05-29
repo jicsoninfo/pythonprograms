@@ -49,29 +49,21 @@ class AVLTree:
         
         # Left Left Case
         if balance > 1 and key < node.left.key:
-            print('left left case')
             return self.rotate_right(node)
         #Right Right Case
         if balance < -1 and key > node.right.key:
-            print('right right case')
-            print(balance)
-            print(key)
-            print(node.right.key)
             return self.rotate_left(node)
         #Left Right Case
         if balance > 1 and key > node.left.key:
-            print('left right case')
             node.left = self.rotate_left(node.left)
             return self.rotate_right(node)
         # Right Left Case
         if balance < -1 and key < node.right.key:
-            print('right left case')
             node.right = self.rotate_right(node.right)
             return self.rotate_left(node)
         # return balance
-        print(node.height)
         # print(self.incr_count)
-        print(balance)
+       
         return node
     def inorder_traversal(self, root):
         if root:
