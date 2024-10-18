@@ -200,3 +200,65 @@ Note: If there is no match, the value None will be returned, instead of the Matc
 
 '''
 #print(reg02)
+
+
+#The sub() function replaces the matches with the text of your choice:
+#Replace every white-space character with the number 9:
+import re
+#Replace all white-space characters with the digit "9":
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
+
+
+
+#You can control the number of replacements by specifying the count parameter:
+#Replace the first 2 occurrences:
+import re
+#Replace the first two occurrences of a white-space character with the digit 9:
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt, 2)
+print(x)
+
+#A Match Object is an object containing information about the search and the result.
+#Note: If there is no match, the value None will be returned, instead of the Match Object.
+#Do a search that will return a Match Object:
+import re
+#The search() function returns a Match object:
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x)
+
+
+
+#The Match object has properties and methods used to retrieve information about the search, and the result:
+#.span() returns a tuple containing the start-, and end positions of the match.
+#.string returns the string passed into the function
+#.group() returns the part of the string where there was a match
+
+#Print the position (start- and end-position) of the first match occurrence.
+
+#The regular expression looks for any words that starts with an upper case "S":
+import re
+#Search for an upper case "S" character in the beginning of a word, and print its position:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
+
+#Print the string passed into the function:
+import re
+#The string property returns the search string:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.string)
+
+#Print the part of the string where there was a match.
+#The regular expression looks for any words that starts with an upper case "S":
+import re
+#Search for an upper case "S" character in the beginning of a word, and print the word:
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+
+
+
