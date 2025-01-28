@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="light-mode.css">
+</head>
+<body>
+    <h1>Welcome to Dark/Light Mode Toggle</h1>
+    <p>This is an example of a dark and light mode toggle using plain HTML, CSS, and JavaScript.</p>
+
+    // Toggle button 
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script>
+        // Get the current theme from localStorage or default to light mode
+        let currentTheme = localStorage.getItem('theme') || 'light';
+
+        // Function to apply the selected theme
+        function applyTheme(theme) {
+            const themeStylesheet = document.getElementById('theme-stylesheet');
+            if (theme === 'dark') {
+                themeStylesheet.href = 'dark-mode.css';
+            } else {
+                themeStylesheet.href = 'light-mode.css';
+            }
+        }
+
+        // Initially apply the stored theme
+        applyTheme(currentTheme);
+
+        // Add an event listener to the button to toggle the theme
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            // Toggle the theme
+            currentTheme = (currentTheme === 'light') ? 'dark' : 'light';
+
+            // Apply the new theme
+            applyTheme(currentTheme);
+
+            // Store the selected theme in localStorage
+            localStorage.setItem('theme', currentTheme);
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="light-mode.css">
+</head>
+<body>
+    <h1>Welcome to Dark/Light Mode Toggle</h1>
+    <p>This is an example of a dark and light mode toggle using plain HTML, CSS, and JavaScript.</p>
+
+    <h2>Linked List</h2>
+    <p>{{ linked_list }}</p>  <!-- This will be replaced by Python code with actual linked list data -->
+
+    <!-- Toggle button -->
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script>
+        // Get the current theme from localStorage or default to light mode
+        let currentTheme = localStorage.getItem('theme') || 'light';
+
+        // Function to apply the selected theme
+        function applyTheme(theme) {
+            const themeStylesheet = document.getElementById('theme-stylesheet');
+            if (theme === 'dark') {
+                themeStylesheet.href = 'dark-mode.css';
+            } else {
+                themeStylesheet.href = 'light-mode.css';
+            }
+        }
+
+        // Initially apply the stored theme
+        applyTheme(currentTheme);
+
+        // Add an event listener to the button to toggle the theme
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            // Toggle the theme
+            currentTheme = (currentTheme === 'light') ? 'dark' : 'light';
+
+            // Apply the new theme
+            applyTheme(currentTheme);
+
+            // Store the selected theme in localStorage
+            localStorage.setItem('theme', currentTheme);
+        });
+    </script>
+</body>
+</html>

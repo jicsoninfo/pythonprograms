@@ -1,0 +1,21 @@
+/* light-mode.css */
+body {
+    background-color: white;
+    color: black;
+}
+
+button {
+    background-color: lightgray;
+    color: black;
+}
+
+/* dark-mode.css */
+/* body {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #555;
+    color: white;
+} */
